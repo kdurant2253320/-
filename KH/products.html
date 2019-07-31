@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>電影詳細內容簡介</title>
+<!--CSS	///////////////////-->
+<link rel="stylesheet" href="CSS/reset.css" type="text/css">
+<link rel="stylesheet" href="CSS/all.css" type="text/css">
+<link rel="stylesheet" href="font/style.css" type="text/css">
+<link rel="stylesheet" href="CSS/style.css" type="text/css">
+<link rel="stylesheet" href="CSS/media.css" type="text/css">
+<!--icon/////////////////	-->
+<link rel="icon" href="images/banner6.jpg" type="image/png">
+<!--jq////////////////////	-->
+<script src="JS/jquery-3.3.1.min.js" type="text/jscript"></script>
+<link rel="stylesheet" href="JS/lightbox2-master/dist/css/lightbox.min.css" type="text/css">
+</head>
+
+<body id="top">
+<a class="icon-arrow-up top fc-br-d" href="#top"></a> 
+<!--搜尋//////////////////-->
+<section class="search ds-flex al-it-c w100 ps-f bgc-bl">
+  <div class="box">
+    <div class="row">
+      <div class="w100 ps-r p-r1-1">
+        <div id="closeBtn" class="ps-a"> <i class="icon-cross"></i> </div>
+        <form action="search.php" method="get" id="search-form">
+          <input type="search" placeholder="搜尋您需要的電影" name="search" id="search">
+          <input type="submit" value="submit" class="ds-n">
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!--	連結///////////////-->
+<header class="bgc-bl-a ps-f w100">
+  <div class="box">
+    <div class="row">
+      <div class="w100 p-r1-1">
+        <nav class="ds-flex al-it-c navbar-box"> <a class="logo" href="index.html" title="點擊電影資訊情報商標開啟首頁"> <img class="w100" src="images/logo.svg" alt="電影情報商標"> </a> 
+          <!--			   link///////////////////////////-->
+          <div class="ds-flex navbar-collapse" id="menu">
+            <ul class="ds-flex m-1-auto navbar-nav">
+              <li><a class="nav-link" href="index.html" title="前往首頁">首頁</a></li>
+              <li><a class="nav-link" href="index.html#about" title="前往關於電影">關於電影</a></li>
+              <li><a class="nav-link" href="index.html#MovieReflection" title="前往電影映期">電影映期</a></li>
+              <li><a class="nav-link" href="index.html#ReleaseMovie" title="前往上映電影">上映電影</a></li>
+              <li><a class="nav-link" href="index.html#position" title="前往影城分布">影城分布</a></li>
+              <li><a class="nav-link" href="contact.html" title="開啟電影頁面">聯絡我們</a></li>
+            </ul>
+           <div class="search-btn p-1-1"> <a href="javascript:void(0)"> <i class="icon-search fc-w"></i> </a> </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<!--	圖片輪播-------------------------------->
+<section> 
+  <!--		--輪播 圖ps-r絕對定位//////////////////////-->
+  <div class="product-area bg-img bg-overlay" style="background-image: url(images/banner6.jpg)">
+    <div class="box h-100">
+      <div class="row h-100 al-it-c">
+        <div class="w100 ps-r p-r1-1" style="z-index: 3">
+          <div class="product-content">
+            <h2>電影詳細資訊</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--分類///////////////////////-->
+<section class="p-t-7 none" id="product">
+  <div class="box">
+    <div class="row">
+      <div class="w-15">
+        <div class="pro-title">
+          <h2>電影詳情</h2>
+        </div>
+      </div>
+      <div class="w-85 p-rl-1">
+        <div class="pro-list">
+          <div class="pro-item">
+            <div class="ds-flex al-it-c">
+              <div class="pro-pic"> <img src="images/pro300.png"  alt=""> </div>
+              <div class="pro-content">
+                <h3>異裂</h3>
+                <p>故事延續《分裂》，當大衛·鄧恩正追尋著如「野獸」般的凱文時，身處黑暗、掌握他們兩人的關鍵秘密的「玻璃先生」伊利亞·普林斯也預謀著神祕的計劃。</p>
+                <h6 class="item-value">諮詢</h6>
+              </div>
+            </div>
+          </div>
+          <div class="pro-item">
+            <div class="ds-flex al-it-c">
+              <div class="pro-pic"> <img src="images/pro300.png"  alt=""></div>
+              <div class="pro-content">
+                <h3>電影名稱</h3>
+                <p>故事延續《分裂》，當大衛·鄧恩正追尋著如「野獸」般的凱文時，身處黑暗、掌握他們兩人的關鍵秘密的「玻璃先生」伊利亞·普林斯也預謀著神祕的計劃。</p>
+                <h6 class="item-value">諮詢</h6>
+              </div>
+            </div>
+          </div>
+          <div class="pro-item">
+            <div class="ds-flex al-it-c">
+              <div class="pro-pic"> <img src="images/pro300.png"  alt=""></div>
+              <div class="pro-content">
+                <h3>電影名稱</h3>
+                <p>故事延續《分裂》，當大衛·鄧恩正追尋著如「野獸」般的凱文時，身處黑暗、掌握他們兩人的關鍵秘密的「玻璃先生」伊利亞·普林斯也預謀著神祕的計劃。</p>
+                <h6 class="item-value">諮詢</h6>
+              </div>
+            </div>
+          </div>
+          <div class="pro-item">
+            <div class="ds-flex al-it-c">
+              <div class="pro-pic"> <img src="images/pro300.png"  alt=""></div>
+              <div class="pro-content">
+                <h3>電影名稱</h3>
+                <p>故事延續《分裂》，當大衛·鄧恩正追尋著如「野獸」般的凱文時，身處黑暗、掌握他們兩人的關鍵秘密的「玻璃先生」伊利亞·普林斯也預謀著神祕的計劃。</p>
+                <h6 class="item-value">諮詢</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+	<section class="p-tb-7" id="pro">
+	<div class="box">
+	 <div class="row">
+		<div class="w100 p-rl-1">
+		 <div class="sale-contet ta-c">
+		<div class="w100 p-rl-1 section-title ta-c"> 
+		<h2>經典重溫電影</h2>		
+		</div>
+<!--////////////////////////////-->
+			 <div class="row">
+			 <div class="sale-box p-rl-1">
+			<a class="sale-link" href="#" title="點擊電影1">
+			<div class="sale-hover">
+			<div class="hover-content">
+				<i class="icon-play2">
+			</i>
+			</div>	
+			</div>
+			<img src="images/prok.png" alt="電影"></a>
+			<div class="sale-caption">
+			<h4>電影</h4>	 
+			</div>	 
+		    </div>
+				  <div class="sale-box p-rl-1">
+			<a class="sale-link" href="#" title="點擊電影1">
+			<div class="sale-hover">
+			<div class="hover-content">
+				<i class="icon-play2">
+			</i>
+			</div>	
+			</div>
+			<img src="images/proi.png" alt="電影"></a>
+			<div class="sale-caption">
+			<h4>電影</h4>	 
+			</div>	 
+		    </div>
+				  <div class="sale-box p-rl-1 ">
+			<a class="sale-link" href="#" title="點擊電影1">
+			<div class="sale-hover">
+			<div class="hover-content">
+				<i class="icon-play2">
+			</i>
+			</div>	
+			</div>
+			<img src="images/pro66.png" alt="電影"></a>
+			<div class="sale-caption">
+			<h4>電影</h4>	 
+			</div>	 
+		    </div>
+				  <div class="sale-box p-rl-1 ">
+			<a class="sale-link" href="#" title="點擊電影1">
+			<div class="sale-hover">
+			<div class="hover-content">
+				<i class="icon-play2">
+			</i>
+			</div>	
+			</div>
+			<img src="images/pro09.png" alt="電影"></a>
+			<div class="sale-caption">
+			<h4>電影</h4>	 
+			</div>	 
+		    </div>
+			</div>
+		 </div>
+		</div>
+	    </div>
+	    </div>
+		</section>
+<!--	///版權申告/////-->
+<footer class="bgc-bl ta-c p-tb-3">
+  <div class="box">
+    <p class="fc-w"> <a href="#top" title="點及回選單"><img src="images/logo.svg" alt="電影資訊情報商標"></a> </p>
+    <p class="fc-w">此網站為版型設計。非商業用途<span class="p-rl-1">|</span><br>
+      &copy;2019昱</p>
+  </div>
+</footer>
+	<!--燈箱效果-->
+<script src="JS/lightbox2-master/dist/js/lightbox.min.js" type="text/javascript"></script>
+<script>
+	$(".search-btn, #closeBtn").click(function(){
+		$("body").toggleClass("search-form-on");
+	});
+	$('a[href^="#"]').click(function(){
+		var target= $(this.hash);
+		$("html,body").animate({
+	scrollTop:target.offset().top},350);
+		});
+	$("#menu").prepend('<div id="menu-button"></div>');
+	$("#menu #menu-button").on("click",function(){
+		var menu = $(this).next("ul");
+		if (menu.hasClass("open")){
+			menu.removeClass("open");
+		}
+		else{
+			menu.addClass("open");
+		}
+	});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>首頁||電影資訊</title>
+<!--CSS	///////////////////-->
+<link rel="stylesheet" href="CSS/reset.css" type="text/css">
+<link rel="stylesheet" href="CSS/all.css" type="text/css">
+<link rel="stylesheet" href="font/style.css" type="text/css">
+<link rel="stylesheet" href="CSS/style.css" type="text/css">
+<link rel="stylesheet" href="CSS/media.css" type="text/css">
+<!--icon/////////////////	-->
+<link rel="icon" href="images/banner6.jpg" type="image/png">
+<!--jq////////////////////	-->
+<script src="JS/jquery-3.3.1.min.js" type="text/jscript"></script>
+</head>
+
+<body>
+<!--搜尋//////////////////-->
+<section class="search ds-flex al-it-c w100 ps-f bgc-bl">
+  <div class="box">
+    <div class="row">
+      <div class="w100 ps-r p-r1-1">
+        <div id="closeBtn" class="ps-a"> <i class="icon-cross"></i> </div>
+        <form action="search.php" method="get" id="search-form">
+          <input type="search" placeholder="搜尋您需要的電影" name="search" id="search">
+          <input type="submit" value="submit" class="ds-n">
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!--	連結///////////////-->
+<header class="bgc-bl-a ps-f w100">
+  <div class="box">
+    <div class="row">
+      <div class="w100 p-r1-1">
+        <nav class="ds-flex al-it-c navbar-box"> <a class="logo" href="index.html" title="點擊電影資訊情報商標開啟首頁"> <img class="w100" src="images/logo.svg" alt="電影情報商標"> </a> 
+          <!--			   link///////////////////////////-->
+          <div class="ds-flex navbar-collapse" id="menu">
+            <ul class="ds-flex m-1-auto navbar-nav">
+              <li><a class="nav-link" href="index.html" title="前往首頁">首頁</a></li>
+              <li><a class="nav-link" href="index.html#about" title="前往關於電影">關於電影</a></li>
+              <li><a class="nav-link" href="index.html#MovieReflection" title="前往電影映期">電影映期</a></li>
+              <li><a class="nav-link" href="index.html#ReleaseMovie" title="前往上映電影">上映電影</a></li>
+              <li><a class="nav-link" href="index.html#position" title="前往影城分布">影城分布</a></li>
+              <li><a class="nav-link" href="javascript:void(0)">聯絡我們</a></li>
+            </ul>
+            <div class="search-btn p-1-1"> <a href="javascript:void(0)"> <i class="icon-search fc-w"></i> </a> </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<!--	圖片輪播-------------------------------->
+<section> 
+  <!--		--輪撥 圖ps-r絕對定位//////////////////////-->
+  <div class="contact-area bg-img bg-overlay" style="background-image: url(images/banner6.jpg)">
+    <div class="box h-100">
+      <div class="row h-100 al-it-c">
+        <div class="w100 ps-r p-r1-1" style="z-index: 3">
+          <div class="contact-content">
+            <h2>聯絡我們</h2>
+           <p><i class="icon-phone"></i><a href="tel:##-2222-6666" title="撥打電話">02-6666-9999</a></p>
+		<p><i class="#"></i><a href="https://goo.gl/maps/roGxXPTWBRK2" title="開啟位置" target="_blank">南投市</a></p>
+		<p><i class="#"></i><a href="mailto:aaaaa@gmail.com" title="電子信箱">mailto:aaaaa@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--聯絡內容///////////////////////-->
+	<section class="ds-flex al-it-c" id="contact">
+	<div class="contact-form-box ds-flex j-c-e">
+	<div class="contact-form">
+	<form action="https://docs.google.com/forms/d/e/1FAIpQLSdHZTFyR-y366gUu17TGdEgVMs9Iv73YXoQWRnslVOETA8WSQ/formResponse" method="post" id="contact-form" target="_blank">
+		<div class="row p-t-1">
+		<div class="w100 p-rl-1">
+		<input class="form-control" type="text" placeholder="姓名" 
+			  name="entry.1640691490" id="name">
+		</div>
+		<div class="w100 p-rl-1">
+		<input class="form-control" type="tel" placeholder="電話" 
+			  name="entry.80368949" id="tel">
+		</div>
+		<div class="w100 p-rl-1">
+		<input class="form-control" type="email" placeholder="信箱" 
+			  name="entry.1147502594" id="email">
+		</div>
+			<div class="w100 p-rl-1">
+			<textarea class="form-control" cols="35" rows="10" name="entry.243636659" id="message"
+					  placeholder="請留言"></textarea>
+			</div>
+			<div class="w100 p-rl-1 ta-c">
+			 <button type="submit" class="btn more-btn"><span></span>送出留言</button>
+				 <button type="reset" class="btn more-btn"><span></span>重新填寫</button>
+<!--			<input type="submit" class="btn more-btn" value="送出留言">-->
+<!--ibput type="reset" class="btn more-btn"	value="重新填寫"-->
+			</div>
+		</div>
+	</form>
+	</div>
+	</div>
+<!--		!--map///////////////-->
+		<div class="map-area ov-f-h">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.555069295198!2d120.68697964945376!3d23.905391088681046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346931f54a5ddb1b%3A0xe9ebd33d5ac40b9a!2z5a625qiC56aPLeWNl-aKleW6lw!5e0!3m2!1szh-TW!2stw!4v1547957582455" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</section>
+<!--	///版權申告/////-->
+	<footer class="bgc-bl ta-c p-tb-3">
+	<div class="box">
+	<p class="fc-w">
+	<a href="#top" title="點及回選單"><img src="images/logo.svg" alt="電影資訊情報商標"></a>
+	</p>
+		<p class="fc-w">此網站為版型設計。非商業用途<span class="p-rl-1">|</span><br>&copy;2019昱</p>
+	</div>
+	</footer>
+	<script>
+		$(".search-btn, #closeBtn").click(function(){
+		$("body").toggleClass("search-form-on");
+	});
+	$("#menu").prepend('<div id="menu-button"></div>');
+	$("#menu #menu-button").on("click",function(){
+		var menu = $(this).next("ul");
+		if (menu.hasClass("open")){
+			menu.removeClass("open");
+		}
+		else{
+			menu.addClass("open");
+		}
+	});
+		
+	
+	</script>
+	</body>
+</html>

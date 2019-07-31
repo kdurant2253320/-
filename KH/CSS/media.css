@@ -1,0 +1,191 @@
+@media (max-width:767px){
+	.slides:after {
+		width: 100%;
+		background: rgba(50,35,18,0.52);
+	}
+	.slides .w-33, #about .w-50, #MovieReflection .w-33, #position [class^="w-"]{
+		width: 100%
+	}
+	.social-info{
+		top: 80%;
+		right: 50px;
+		-webkit-flex-direction: row;
+		flex-direction: row;
+		font-size: 2rem
+	}
+	.social-info a{
+		margin-right: 1rem;
+		color:whitesmoke;
+	}
+/*關於部分-------------*/
+	.section-title{
+		margin: 30px 0;
+		font-size: 2.35rem;
+		
+	}
+	#about .section-title {
+    margin: 30px 0;
+    font-size: 2.2rem;
+	white-space: nowrap
+}
+
+
+	.about-bg:after{
+		content: "";
+	}
+	.about-bg:before{
+		display:none;
+	}
+	.about-bg .p-t-15{
+		padding-top: 3em;
+	}
+	.about-bg p{
+		margin-bottom: 1rem
+	}
+/*--分類--*/
+	.pro-box{
+		padding: 50px 10px 30px;
+	}
+	.pro-box:after{
+		width: calc(100% - 40px);
+	}
+	#MovieReflection .w-33 {
+	   margin-bottom: 1.5rem	
+	}
+	#MovieReflection:before{
+		content: "";
+	}
+/*--產品---*/
+	.sale-box{
+		-webkit-flex: 0 0 100100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-bottom: 0.8rem;
+	}
+	.sale-content{
+		padding: 20px 0;
+	}
+/*---位置----*/
+	#position.ds-flex, #contact.ds-flex{
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+	#position .section-title{
+		text-align: center
+	}
+/*聯絡我們-------------*/
+	.contact-area:before,
+	.product-area:before,
+	.contact-form-box
+	{
+		width: 100%;
+	}
+	.contact-form{
+		margin-right: 0;
+	}
+	.map-area{
+		width: 90%
+	}
+/*產品詳細內容--------*/
+	.product-content h2{
+		white-space: nowrap;
+	}
+	#product .row > [class^="w-"]{
+		width: 100%;
+		
+	}
+	.pro-title{
+		font-size: 3.8rem;
+	       margin-bottom: 0.9em;
+		text-align: center;
+	}
+	.pro-item .ds-flex{
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+	#product.p-t-7{
+		padding-top: 4em
+	}
+	.pro-content{
+		margin: 10px 0;
+	}
+/*	767px-----------------*/
+}
+@media (width:768px){
+	.slides:after, .slides .w-33, .contact-area:before, .product-area:before {
+		width: 50%;
+	}
+	.nav-link {
+		font-size: 1rem;
+	}
+	#about .section-title{
+		font-size: 2.5rem;
+		margin: 20px 0;
+	}
+	.section-title{
+		font-size: 2.5rem;
+	}
+	#about.p-t-8{
+		padding-top: 5em
+	}
+	.about-bg:after{
+		font-size: 100px;
+	}
+	.about-bg:before{
+		top: 120px;
+	}
+	.about-bg .p-t-15{
+		padding-top: 10em;
+	}
+	.pro-box:after{
+		width: calc(100% - 40px);
+	}
+	.pro-box{
+		padding: 50px 10px 30px;
+	}
+	#sort .w-33.p-rl-1{
+		padding: 0
+	}
+	#sort:before{
+		right: -30%;
+	}
+	.sale-box {
+		-webkit-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+/*	聯絡資訊-------*/
+	.contact-form {
+    width: 100%;
+    margin-right: 0;
+}
+	button.more-bth{
+		margin: 0.4em;
+	}
+	#contact-form .btn{
+		padding: 0.75rem;
+	}
+/*產品詳細內容-------*/
+	#product .row > [class^="w-"]{
+		width: 100%
+	}
+	#product .p-t-7{
+		padding-top: 4em
+	}
+	.pro-title{
+		font-size: 120px;
+		text-align: center;
+		margin-bottom: 0.5em;
+		}
+/*	.pro-pic*/
+/*	max-width: 300px*/
+/*}*/
+	.pro-item .ds-flex{
+		-webit-flex-dirextion: column;
+		flex-direction: column;
+	}
+	.pro-pic{
+		max-width: 600px;
+	}
+/*768px-----------------*/
+}

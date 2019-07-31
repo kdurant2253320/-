@@ -1,0 +1,310 @@
+body{
+	font-family: "微軟正黑體 Light", "sans-serif";
+/*	background: rgba(232,232,232,1.00);*/
+}
+.index-bg{
+	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(160,30,183,0.84) 64.25%,rgba(180,1,212,0.91) 82.90%,rgba(104,3,122,0.78) 100%), url(../images/apparel/banner7.jpg);
+	background-image: -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(160,30,183,0.84) 64.25%,rgba(180,1,212,0.91) 82.90%,rgba(104,3,122,0.78) 100%), url(../images/apparel/banner7.jpg);
+	background-image: -o-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(160,30,183,0.84) 64.25%,rgba(180,1,212,0.91) 82.90%,rgba(104,3,122,0.78) 100%), url(../images/apparel/banner7.jpg);
+	background-image: linear-gradient(180deg,rgba(255,255,255,1.00) 0%,rgba(160,30,183,0.84) 64.25%,rgba(180,1,212,0.91) 82.90%,rgba(104,3,122,0.78) 100%), url(../images/apparel/banner7.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center bottom;
+}
+.about-bg{
+	background-image: -webkit-linear-gradient(270deg,rgba(145,0,255,0.72) 0%,rgba(255,0,0,0.78) 100%), url(../images/apparel/1548126695.jpg);
+	background-image: -moz-linear-gradient(270deg,rgba(145,0,255,0.72) 0%,rgba(255,0,0,0.78) 100%), url(../images/apparel/1548126695.jpg);
+	background-image: -o-linear-gradient(270deg,rgba(145,0,255,0.72) 0%,rgba(255,0,0,0.78) 100%), url(../images/apparel/1548126695.jpg);
+	background-image: linear-gradient(180deg,rgba(145,0,255,0.72) 0%,rgba(255,0,0,0.78) 100%), url(../images/apparel/1548126695.jpg)
+}
+h1 .logo{
+	width: 100%;
+	max-width: 100px;
+}
+nav.bg-dark{
+	background-color: rgba(51,55,65,1.00)!important;
+}
+.navbar-dark .navbar-nav .active > .nav-link{
+	color:darkkhaki;
+	font-size: 1.4rem;
+	font-weight: 450;
+	letter-spacing: 2px
+}
+.navbar-dark .navbar-nav .nav-link{
+	color: antiquewhite;
+	font-size: 1.4rem;
+	font-weight: 450;
+	letter-spacing: 2px
+}
+.page-section.py-5{
+	padding-top: 5rem!important
+}
+.intro-text p{
+	line-height: 1.6;
+	font-size: 1.1rem;
+}
+.intro-button .btn-warning{
+/*	color:#FF4F00;*/
+	text-transform: uppercase;
+	font-size:1.3rem;
+}
+.cta{
+	background: rgba(0,106,205,0.82)
+}
+.cta-inner{
+	padding: 3rem;
+	margin: 0.5rem;
+	background: rgba(255,250,255,0.5)
+}
+.cta-inner:before{
+	content: "";
+	position: absolute;
+	top: -0.5rem;
+	bottom: -0.5rem;
+	left: -0.5rem;
+	right: -0.5rem;
+	border: -0.25rem solid
+	rgba(255,255,255,0.7);
+	border-radius: 0.5rem;
+		
+}
+/*關於---------------------*/
+.section-heading-lower{
+	font-size:2.8rem
+}
+.about-heading-content{
+	margin-top: -8rem
+}
+/*聯絡--------------------*/
+.map .img-thumbnail {
+	height: 500px;
+	width: 100% 
+}
+.contact-icon i{
+	width:30px;
+	height: 30px;
+	text-align: center;
+	font-size: 2rem;
+}
+.contact-icon + .media-body{
+	margin-left: 1rem
+}
+/*產品-------------------*/
+.product-item-title{
+	position: relative;
+	z-index: 1;
+	margin-bottom: -3rem;
+}
+.product-item-img{
+	position: relative;
+	z-index: 0;
+	max-width: 80vw;
+}
+.product-item-description{
+	position: relative;
+	z-index: 1;
+	margin-top: -3rem;
+	max-width: 50vw;
+	
+}
+
+/*//////產品-01//////////*/
+.card{
+	box-shadow: 0 10px 10px	rgba(0,0,0,.5)
+}
+.overlay{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+/*	background: rgba(0,223,198,1.00)*/
+}
+.overlay:before, .overlay:after{
+	content: "";
+	position: absolute;
+	width: 30%;
+	height: 30%;
+/*    background: rgba(72,225,0,1.00);*/
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+    opacity: 0;
+	/*	opacity式透明*/
+}
+.overlay:before{
+	top:0;
+	left:0;
+	z-index: 1;
+	background:rgba(0,176,255,0.4);
+}
+.overlay:after{
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+    background: rgba(0,179,88,0.70)
+}
+.card-body:hover .overlay:before,
+.card-body:hover .overlay:after
+{
+	height: 70%;
+	width: 100%;
+	opacity: 0.65;
+}
+.item-icon{
+	height: 48px;
+	width: 48px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border: 2px solid rgba(72,225,2,1.00);
+	background: rgba(104,67,5,0.5);
+	color: whitesmoke;
+	font-size: 24px;
+	margin-top: -24px;
+	margin-left: -24px;
+	text-align: center;
+	line-height: 48px;
+	opacity: 0;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+   /*	opacity式透明*/
+}
+.card-body:hover .item-icon{
+	opacity: 1
+}
+/*footer///socialicon///////////////////*/
+footer .social-link, .contact .social-link{
+	display: block;
+	height: 4rem;
+	width: 4rem;
+	font-size: 2rem;
+	border: 2.5px solid #fff;
+	line-height: 3.5rem;
+}
+.contact .social-link{
+	border: none;
+	line-height: 4rem
+}
+.fb{
+	background: #037EFF
+}
+.ig{
+	background: #c13584
+}
+.yu{
+	background: #ff0000
+}
+/*collapse icon//////////////*/
+#accordion h5 i{
+	font-size: 2rem;
+	color:#FF215F;
+	margin-right: 5px;
+}
+#accordion .card-header{
+	background-color: transparent;
+	border-bottom: 1px solid rgba(0,0,0,0.75);
+}
+#accordion .card-header a{
+	text-decoration: none;
+}
+@media (min-width:992px){
+	.intro-img{
+		width: 75%;
+		float: right;
+	}
+	.intro-text{
+		left: 0;
+		width: 60%;
+		margin-top: 6rem;
+	}
+	.intro-button{
+		width: 100%;
+		left: 0;
+		bottom: -2rem;
+	}
+/*992px------------------------------	*/
+}
+@media (min-width:1200px){
+	.intro-text{
+		width: 45%;
+	}
+/*	1200px--------------------------*/
+}
+/*輪播圖*/
+/*
+@media(min-width:992px){
+.carousel-inner{
+	height: 100vh
+}
+}*/
+.carousel-caption{
+	bottom: 40%;
+	background: rgba(255,255,255,0.6);
+	color: rgba(70,70,70,1.00);
+}
+.carousel-indicators{
+	bottom: 30%;
+	
+}
+.carousel-indicators li{
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+/*	background: rgba(131,32,35,0.5);*/
+	background: transparent;
+	border: 1px solid rgba(131,1,4,1);
+}
+.carousel-indicators li .active{
+	background: rgba(131,1,4,1.00);
+/*	height: 6px;*/
+	border-radius: 0;
+}
+.arrow{
+	position: absolute;
+	right: 0;
+	bottom: 20%;
+	left: 0;
+	z-index: 15;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding-left: 0;
+	margin-right: 15%;
+	margin-left: 15%;
+	font-size: 3rem;
+	
+}
+@media (max-width:767px){
+	.arrow{
+		display: none;
+	}
+	.carousel-indicators{
+		bottom: 10px;
+	}
+	.intro-text.position-absolute, .intro-button.position-absolute{
+		position: relative!important
+	}
+	.home-pro .p-5, .about-heading-content .p-5{
+		padding: 0.5rem!important
+	}
+	.about-heading-content{
+		margin-top: 0;
+	}
+	.product-item-description{
+      max-width: 100%;
+	  margin-top: -0.5rem;
+}
+	.product-item-title{
+		margin-bottom: -0.5rem;
+/*		width: 100%*/
+	}
+	.product-item-title .ml-auto{
+		margin-left: 0!important;
+		width: 100%
+	}
+}
+
+
+
